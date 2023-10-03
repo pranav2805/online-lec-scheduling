@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+#admin-panel {
+  width: 80%;
+  max-width: 800px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* display: flex; */
+  justify-content: space-evenly;
+}
+
+h2 {
+  color: #333;
+}
+
+/* Style form elements */
+label,
+input,
+button,
+select {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="date"] {
+  width: 40%;
+  padding: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Course and Lecture lists */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}

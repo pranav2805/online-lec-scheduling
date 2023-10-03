@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="./css/admin.css" />
+  </head>
+  <body>
+    <div id="admin-panel">
+      <h2>Admin Panel</h2>
+      <h3>Add Course</h3>
+      <label for="courseName">Name:</label>
+      <input type="text" id="courseName" placeholder="Course name" />
+      <label for="courseLevel">Level:</label>
+      <select name="courseLevel" id="courseLevel">
+        <option>Beginner</option>
+        <option>Intermediate</option>
+        <option>Advanced</option>
+      </select>
+      <label for="courseDescription">Description:</label>
+      <input
+        type="text"
+        id="courseDescription"
+        placeholder="Course description"
+      />
+      <label for="courseImage">Image URL:</label>
+      <input type="text" id="courseImage" placeholder="Course image URL" />
+      <button onclick="addCourse()">Add Course</button>
+
+      <h3>Add Lecture</h3>
+      <label for="lectureDate">Date:</label>
+      <input type="date" id="lectureDate" />
+      <label for="lectureInstructor">Instructor:</label>
+      <input type="text" id="lectureInstructor" placeholder="Instructor name" />
+      <label for="courses">Course:</label>
+      <select id="courses">
+        <option value="">Select a course</option>
+      </select>
+      <button onclick="addLecture()">Add Lecture</button>
+
+      <h3>Course List</h3>
+      <ul id="courseList"></ul>
+
+      <h3>Lecture List</h3>
+      <ul id="lectureList"></ul>
+    </div>
+    <script src="./js/admin.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+  </body>
+</html>
