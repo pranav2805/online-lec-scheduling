@@ -6,6 +6,6 @@ const lectureController = require("../controllers/lectureCont");
 
 router.post("/addLecture", lectureController.postLecture);
 
-router.get("/getLectures");
+router.get("/getLectures", lectureController.getLectures);
 
 module.exports = router;
